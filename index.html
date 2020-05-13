@@ -3,47 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kamilla weboldala</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
 </head>
 <body>
-    <header>
-        <div>
-            <h1>Kamilla weboldala</h1>
-        </div>
-    </header>
-    <nav>
-        <div>
-            <ul>
-                <li>
-                    <a href="rolam.html" target="blank">Röviden rólam</a>
-                </li>
-                <li>
-                    <a href="kepek.html" target="blank">Képek</a>
-                </li>
-                <li>
-                    <a href="naplo.html" target="blank">Anya és Apa naplója</a>
-                </li>
-                <li>
-                    <a href="csalad.html" target="blank">Családom</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <aside>
-        <div>
-            placeholder
-        </div>
-    </aside>
-    <main>
-        <div>
-            placeholder
-        </div>
-    </main>
-    <footer>
-        <div>
-            placeholder
-        </div>
-    </footer>
+
+<head>
+    <title>Login page</title>
+</head>
+<body>
+<form>
+    <label for="pswd">Enter your password: </label>
+    <input type="password" id="pswd">
+    <input type="button" value="Submit" onclick="checkPswd();" />
+</form>
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "VeronikaesAdam2020";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="index.html";
+        }
+        else{
+            alert("Passwords do not match.");
+        }
+    }
+</script>
 </body>
 </html>
